@@ -24,6 +24,7 @@
 [npm-license-image]: https://img.shields.io/npm/l/react-intl-translations-manager.svg
 [npm-license-url]: https://www.npmjs.com/package/react-intl-translations-manager
 
+
 React-intl-translations-manager will help you in managing your translations.
 Hereby it will give you the current status of your translation, telling you what
 duplicate keys you have, what messages aren't translated yet, what messages were
@@ -70,9 +71,13 @@ const manageTranslations = require('react-intl-translations-manager').default;
 // import manageTranslations from 'react-intl-translations-manager';
 
 manageTranslations({
-  messagesDirectory: 'src/translations/extractedMessages',
+    messagesDirectory: 'src/translations/extractedMessages',
   translationsDirectory: 'src/translations/locales/',
-  languages: ['nl'] // any language you need
+  reportDirectory:  'src/translations/report/', //file containing the keys that need to be translated
+  //languages: ['fr', 'de', 'it', 'fi', 'es'],
+  languages: ['fr', 'de'],
+  printReport: true, // turn on/off logs on th terminal
+  reportGroupedByLocales: true, // display keys to translate grouped by locales
 });
 ```
 
