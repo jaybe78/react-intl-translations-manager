@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hello_world",
+    "description": "A greeting to the world",
+    "defaultMessage": "Hello {name}"
+  },
+  {
+    "id": "hello_name",
+    "description": "Name input field placeholder",
+    "defaultMessage": "Your name"
+  }
+]
