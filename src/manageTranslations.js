@@ -26,7 +26,6 @@ export default ({
   whitelistsDirectory = translationsDirectory,
   whitelistsNeeded = false,
   languages = [],
-  singleMessagesFile = false,
   detectDuplicateIds = true,
   sortKeys = true,
   printReport = true,
@@ -90,7 +89,6 @@ export default ({
 
     outputSingleFile: async combinedFiles => {
       return new Promise(async function(resolve) {
-        if (singleMessagesFile) {
           const modifiedKeys = await createSingleMessagesFile({
             messages: combinedFiles,
             directory: translationsDirectory,
@@ -99,7 +97,6 @@ export default ({
           });
           //console.log('modifiedKeys output: ', modifiedKeys);
           return resolve(modifiedKeys);
-        }
       });
 
     },
