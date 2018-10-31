@@ -74,7 +74,6 @@ manageTranslations({
     messagesDirectory: 'src/translations/extractedMessages',
   translationsDirectory: 'src/translations/locales/',
   reportDirectory:  'src/translations/report/', //file containing the keys that need to be translated
-  //languages: ['fr', 'de', 'it', 'fi', 'es'],
   languages: ['fr', 'de'],
   printReport: true, // turn on/off logs on th terminal
   reportGroupedByLocales: true, // display keys to translate grouped by locales
